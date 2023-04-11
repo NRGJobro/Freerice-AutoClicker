@@ -1,0 +1,17 @@
+window.freeRiceHackFunc = function() { 
+  let problem = document.getElementsByClassName("card-title")[0].innerText; 
+  let opts = document.getElementsByClassName('card-button');
+
+  let clickThis = opts[2]; // HTMLElement C
+    
+    clickThis.click();
+
+  for (let i = 0; i < window.bruh.length; i++) {
+    clearTimeout(window.bruh[i]);
+    bruh.shift();
+  }
+
+  bruh.push(setTimeout(window.freeRiceHackFunc, 400));
+}
+window.bruh = [];
+bruh.push(setTimeout(window.freeRiceHackFunc, 400));
